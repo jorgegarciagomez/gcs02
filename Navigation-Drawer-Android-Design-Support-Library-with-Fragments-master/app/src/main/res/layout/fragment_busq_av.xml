@@ -1,0 +1,223 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.videumcorp.desarrolladorandroid.navigationdrawerandroiddesignsupportlibrarywithfragments.Fragments.BusqAvFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="50dp"
+        android:weightSum="1">
+
+        <!--
+        <CheckBox
+            android:id="@+id/checkBoxLocActual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Usar mi localización actual" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkBoxLugar"
+                android:layout_width="89dp"
+                android:layout_height="wrap_content"
+                android:text="Lugar:" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteLocBAv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 />
+        </LinearLayout>
+        -->
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteLocBAv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="Localizacion"
+            />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Operación:"
+                android:textColor="@color/md_blue_900"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerBusqAvTipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/opciones_prompt"
+                android:entries="@array/opciones"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Precio: De"
+                android:textColor="@color/md_black_1000"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editTextPrecioMin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="a"
+                android:textColor="@color/md_black_1000"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editTextPrecioMax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="€"
+                android:textColor="@color/md_black_1000"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textViewTam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Metros: Min"
+                android:textColor="@color/md_black_1000"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editTextTamMin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textVMax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Max"
+                android:textColor="@color/md_black_1000"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/editTextTamMax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:inputType="number" />
+            <!--
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="m^2"
+                android:textColor="@color/md_black_1000"
+                android:textSize="18sp" />
+                -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mín habitaciones: "
+                android:textColor="@color/md_black_1000"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editTextHabitaciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mín baños:"
+                android:textColor="@color/md_black_1000"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/editTextBanyos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:inputType="number" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/buttonBusqAvBuscar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="5dp"
+            android:background="?attr/colorPrimary"
+            android:textColor="@color/md_white_1000"
+            android:gravity="center"
+            android:text="Buscar" />
+
+    </LinearLayout>
+
+</FrameLayout>

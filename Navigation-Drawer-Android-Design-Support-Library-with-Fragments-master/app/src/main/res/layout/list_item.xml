@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textNombrePiso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Piso UA"
+        android:textColor="@color/md_blue_900"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageViewPiso"
+        android:layout_toEndOf="@+id/imageViewPiso" />
+
+    <TextView
+        android:id="@+id/textPrecioPiso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="300 € "
+        android:textColor="@color/md_blue_900"
+        android:layout_below="@+id/textNombrePiso"
+        android:layout_toRightOf="@+id/imageViewPiso"
+        android:layout_toEndOf="@+id/imageViewPiso" />
+
+    <TextView
+        android:id="@+id/textHabitacionesPiso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignLeft="@+id/textPrecioPiso"
+        android:layout_alignStart="@+id/textPrecioPiso"
+        android:layout_below="@+id/textPrecioPiso"
+        android:text="4 habitaciones"
+        android:textColor="@color/md_blue_900" />
+
+    <ImageView
+        android:id="@+id/imageViewPiso"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/casa1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

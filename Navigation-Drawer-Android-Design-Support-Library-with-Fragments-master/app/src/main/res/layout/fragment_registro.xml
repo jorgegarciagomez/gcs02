@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="70dp">
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="1"
+        android:maxLines="1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:inputType="textEmailAddress"
+        android:imeOptions="actionNext"
+        android:nextFocusDown="@+id/editTextNombre"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="1"
+        android:maxLines="1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        android:nextFocusDown="@+id/editTextApellidos"
+        android:hint="Nombre" />
+
+    <EditText
+        android:id="@+id/editTextApellidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="1"
+        android:maxLines="1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        android:nextFocusDown="@+id/editTextTelefono"
+        android:hint="Apellidos" />
+
+    <EditText
+        android:id="@+id/editTextTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="1"
+        android:maxLines="1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:inputType="phone"
+        android:imeOptions="actionNext"
+        android:digits="0123456789"
+        android:maxLength="9"
+        android:nextFocusDown="@+id/editTextPassword"
+        android:hint="Telefono" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="1"
+        android:maxLines="1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:imeOptions="actionNext"
+        android:nextFocusDown="@+id/editTextRepitePassword"
+        android:inputType="textPassword"
+        android:hint="Password" />
+
+    <EditText
+        android:id="@+id/editTextRepitePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="1"
+        android:maxLines="1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:imeOptions="actionSend"
+        android:inputType="textPassword"
+        android:hint="Repite Password" />
+
+    <Button
+        android:id="@+id/buttonRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="?attr/colorPrimary"
+        android:textColor="@color/md_white_1000"
+        android:text="Registrase"/>
+
+</LinearLayout>

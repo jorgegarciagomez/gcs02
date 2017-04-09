@@ -1,0 +1,129 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.videumcorp.desarrolladorandroid.navigationdrawerandroiddesignsupportlibrarywithfragments.Fragments.NuevoAnuncioFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp">
+
+        <TextView
+            android:id="@+id/textViewTipoVivienda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:text="Tipo de Vivienda:" />
+
+        <Spinner
+            android:id="@+id/spinnerTipoVivienda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:entries="@array/tipo_vivienda"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupDisponibilidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioAlquilar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="alquilar" />
+
+            <RadioButton
+                android:id="@+id/radioComprar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="comprar" />
+
+            <RadioButton
+                android:id="@+id/radioCompartir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="compartir" />
+
+        </RadioGroup>
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextViewLugar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:nextFocusDown="@+id/editTextPrecio"
+            android:hint="Lugar" />
+
+        <EditText
+            android:id="@+id/editTextPrecio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:hint="Precio" />
+
+        <EditText
+            android:id="@+id/editTextDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:minLines="1"
+            android:maxLines="2"
+            android:hint="Descripcion" />
+
+        <TextView
+            android:id="@+id/textViewBaños"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:text="Numero de Baños: 1" />
+
+        <SeekBar
+            android:id="@+id/seekBarBaños"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:max="10"/>
+
+        <EditText
+            android:id="@+id/editTextMetros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:imeOptions="actionSend"
+            android:inputType="number"
+            android:hint="Metros" />
+
+        <Button
+            android:id="@+id/buttonNuevoAnuncio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="?attr/colorPrimary"
+            android:textColor="@color/md_white_1000"
+            android:text="Nuevo anuncio"/>
+
+    </LinearLayout>
+</FrameLayout>

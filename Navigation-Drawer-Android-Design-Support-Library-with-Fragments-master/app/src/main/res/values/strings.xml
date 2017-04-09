@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">ViviendasApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="vivienda_prompt">Tipo de vivienda</string>
+    <string name="opciones_prompt">Elige el tipo de Operación</string>
+    <string-array name="tipo_vivienda">
+        <item>Piso normal</item>
+        <item>Chalet</item>
+        <item>Duplex</item>
+    </string-array>
+
+    <string-array name="opciones">
+        <item>Alquilar</item>
+        <item>Comprar</item>
+        <item>Compartir</item>
+    </string-array>
+
+    <string-array name="lugar_vivienda">
+        <item>San Vicente</item>
+        <item>Alicante</item>
+        <item>Benidorm</item>
+    </string-array>
+</resources>

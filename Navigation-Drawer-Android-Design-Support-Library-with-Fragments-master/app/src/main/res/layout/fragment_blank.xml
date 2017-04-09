@@ -1,0 +1,137 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.videumcorp.desarrolladorandroid.navigationdrawerandroiddesignsupportlibrarywithfragments.Fragments.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="55dp"
+        android:weightSum="1">
+        <!--
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Home"
+            android:textAlignment="center"
+            android:textColor="@color/material_deep_teal_500"
+            android:textSize="24sp" />
+        -->
+        <!--
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/casa1" />
+        -->
+        <TextView
+            android:id="@+id/textViewLogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:text="VIVIENDASapp"
+            android:textColor="?attr/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="24sp" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup_opciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_alquilar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Alquilar" />
+
+            <RadioButton
+                android:id="@+id/radio_compartir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Compartir" />
+
+            <RadioButton
+                android:id="@+id/radio_comprar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comprar" />
+
+        </RadioGroup>
+
+        <Spinner
+            android:id="@+id/spinnerVivienda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="5dp"
+            android:prompt="@string/vivienda_prompt"
+            android:entries="@array/tipo_vivienda" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteLocalizacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:hint="Localización"
+            android:minLines="1"
+            android:maxLines="1"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            />
+
+        <Button
+            android:id="@+id/buttonBuscar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="5dp"
+            android:background="?attr/colorPrimary"
+            android:textColor="@color/md_white_1000"
+            android:gravity="center"
+            android:text="Buscar" />
+        <Button
+            android:id="@+id/buttonBusAv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="5dp"
+            android:background="?attr/colorPrimary"
+            android:textColor="@color/md_white_1000"
+            android:gravity="center"
+            android:text="Busqueda Avanzada" />
+        <Button
+            android:id="@+id/buttonNuevoAnuncio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="5dp"
+            android:background="?attr/colorPrimary"
+            android:textColor="@color/md_white_1000"
+            android:gravity="center"
+            android:text="Publica tu anuncio" />
+
+
+
+    </LinearLayout>
+</FrameLayout>
